@@ -1,0 +1,19 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+ol {
+    color: blue;
+}
+
+p {
+    color: gray;
+}
+
+span {
+    color: red;
+}
+
+ul {
+    color: black;
+}
