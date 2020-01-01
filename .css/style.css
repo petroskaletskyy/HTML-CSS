@@ -1,0 +1,374 @@
+/*Reset CSS-------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Загальні стилі---------------------------------------------------------------*/
+
+body, 
+* {
+    font-family: "Tahoma", sans-serif;
+    color: #e6e6e6;
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/*Контейнер сторінки----------------------------------------------------------*/
+
+.container {
+    width: 960px;
+    background: url("../.images/background.jpg");
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Хедер сторінки---------------------------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 204px;
+}
+
+.left_side {
+    width: 263px;
+    height: 147px;
+    background-image: url("../.images/palm%20tree.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin: 57px 0 0 71px;
+    float: left;
+}
+
+.left_side img {
+    padding-top: 75px;
+}
+
+.left_side p {
+    font-size: 10px;
+    text-align: center
+}
+
+.right_side {
+    height: 147px;
+    float:right;
+    margin: 57px 70px 0 0;
+}
+
+.right_side p {
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 80px 0 7px 0;
+}
+
+.right_side ul li {
+    font-size: 9px;
+    padding: 5px 0 0 0;
+}
+
+.right_side a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Мейн сторінки----------------------------------------------------------------*/
+
+main {
+    padding-left: 65px;
+}
+
+.photo {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.photo_border {
+    width: 100%;
+    height: 100%;
+    border: 3px solid #8b8987;
+    border-radius: 3px;
+    position: relative;
+}
+
+.photo_border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+.photo img {
+    vertical-align: middle;
+    max-width: 100%;
+    width: auto;
+};
+
+/*-----------------------------------------------------------------------------*/
+
+/*Футер сторінки---------------------------------------------------------------*/
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 110px;
+    padding-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*Медіа-запити-----------------------------------------------------------------*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 768px;
+        background-repeat: repeat-y;
+    }
+    
+    header {
+        height: 175px;
+    }
+    
+    main {
+        padding-left: 105px;
+    }
+    
+    .left_side {
+        margin: 25px 0 0 110px;
+    }
+    
+    .right_side {
+        margin: 25px 110px 0 0;
+    }
+    
+    footer p {
+        padding-top: 80px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        width: 600px;
+        background-repeat: repeat-y;
+    }
+    
+    header {
+        height: 165px;
+    }
+    
+    .left_side {
+        margin: 15px 0 0 30px;
+    }
+    
+    .right_side {
+        margin: 15px 20px 0 0;
+    }
+    
+    main {
+       padding-left: 25px; 
+    }
+    
+    footer p {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .container {
+        width: 480px;
+        background-repeat: repeat-y;
+    }
+    
+    header {
+        height: 210px;
+    }
+    
+    .left_side {
+        float: left;
+        margin: 15px 100px 0 100px;
+    }
+    
+    .right_side {
+        width: 100%;
+        margin: 20px 0 0 100px;
+        height: auto;
+        display: inline-block;
+        float: left;
+    }
+    
+    .right_side p {
+        padding: 0;
+        display: inline-block;
+        float: left;
+    }
+    
+    .right_side ul li{
+        display: inline;
+        float: left;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    main {
+        padding-left: 100px
+    }
+    
+    footer p {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 480px) {
+    .container {
+        width: 300px;
+        background-repeat: repeat-y;
+    }
+    
+     header {
+        height: 210px;
+    }
+    
+    .left_side {
+        float: left;
+        margin: 15px 20px 0 20px;
+    }
+    
+    .right_side {
+        width: 100%;
+        margin: 10px 0 0 20px;
+        height: auto;
+        display: inline-block;
+        float: left;
+    }
+    
+    .right_side p {
+        padding: 0;
+        display: inline-block;
+        float: left;
+    }
+    
+    .right_side ul li{
+        display: inline;
+        float: left;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    main {
+        padding-left: 20px
+    }
+    
+    footer p {
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        width: 290px;
+        background-repeat: repeat-y;
+    }
+    
+     header {
+        height: 200px;
+    }
+    
+    .left_side {
+        float: left;
+        margin: 10px 20px 0 15px;
+    }
+    
+    .right_side {
+        width: 100%;
+        margin: 10px 0 0 15px;
+        height: auto;
+        display: inline-block;
+        float: left;
+    }
+    
+    .right_side p {
+        padding: 0;
+        display: inline-block;
+        float: left;
+    }
+    
+    .right_side ul li{
+        display: inline;
+        float: left;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    main {
+        padding-left: 10px
+    }
+    
+    footer p {
+        padding-top: 10px;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
