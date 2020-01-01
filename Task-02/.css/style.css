@@ -1,0 +1,348 @@
+body {
+    font-family: "Open Sans", serif;
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    background: url("../.images/bg.jpg") no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -400px;
+}
+
+/*Форма для елементів---------------------------------------*/
+.form {
+    border: 1px solid transparent;
+    position: relative;
+    width: 330px;
+    height: 560px;
+    left: 240px;
+}
+
+/*----------------------------------------------------------*/
+
+/*Напис Login Form-------------------------------------------*/
+h1 {
+    font-family: "AkzidenzGrotesk", "Open Sans", serif;
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #00264d;
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.6);
+}
+
+/*----------------------------------------------------------*/
+
+/*Кнопки Facebook i Twitter---------------------------------*/
+.btnFb {
+    margin: 40px 0px 20px 5px;
+    width: 160px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.btnTw {
+    margin: 40px 0px 20px 0px;
+    width: 150px;
+    height: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.btnFb a,
+.btnTw a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.imgFb {
+    background: linear-gradient(#0d76be, #0d63ab);
+    width: 30px;
+    height: 30px;
+    float: left;
+    border: 1px solid #0d63ab;
+    z-index: 2;
+    border-radius: 5px 0 0 5px;
+}
+
+.imgTw {
+    background: -webkit-linear-gradient(#57d5ff, #17ade0);
+    background: -o-linear-gradient(#57d5ff, #17ade0);
+    background: linear-gradient(#57d5ff, #17ade0);
+    width: 35px;
+    height: 30px;
+    float: left;
+    border: 1px solid #17ade0;
+    z-index: 2;
+    border-radius: 5px 0 0 5px;
+}
+
+.loginFb {
+    background: -webkit-linear-gradient(#0d76be, #0d63ab);
+    background: -o-linear-gradient(#0d76be, #0d63ab);
+    background: linear-gradient(#0d76be, #0d63ab);
+    width: 120px;
+    height: 30px;
+    padding: 0 0 0 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    border: 1px solid #0d63ab;
+    border-radius: 5px;
+}
+
+.loginTw {
+    background: -webkit-linear-gradient(#57d5ff, #17ade0);
+    background: -o-linear-gradient(#57d5ff, #17ade0);
+    background: linear-gradient(#57d5ff, #17ade0);
+    width: 120px;
+    height: 30px;
+    padding: 0 0 0 35px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 10px;
+    border: 1px solid #17ade0;
+    border-radius: 5px;
+}
+
+.imgFb img {
+    padding-top: 4px;
+    padding-left: 8px;
+    z-index: 2;
+}
+
+.imgTw img {
+    padding-top: 5px;
+    padding-left: 5px;
+    z-index: 2;
+}
+
+/*----------------------------------------------------------*/
+
+/*Роздільна смуга з текстом---------------------------------*/
+.hl {
+    width: 130px;
+    height: 10px;
+    border-bottom: 2px solid #ebebeb;
+    float: left;
+    margin: 25px 0px 0px 100px;
+    z-index: 1;
+}
+
+.circle {
+    margin: 15px auto;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #ebebeb;
+    z-index: 2;
+}
+
+.circle span {
+    color: #797979;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -12px;
+    margin-left: 12px;
+    z-index: 3;
+}
+
+/*------------------------------------------------------------*/
+
+/*Поля  вводу логіна та пароля--------------------------------*/
+input[type="text"] {
+    float: left;
+    margin-top: 10px;
+    width: 275px;
+    height: 40px;
+    display: block;
+    background: #ebebeb;
+    border: 1px solid #797979;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+input[type="password"] {
+    float: left;
+    margin-top: 20px;
+    width: 275px;
+    height: 40px;
+    display: block;
+    background: #ebebeb;
+    border: 1px solid #797979;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.log {
+    float: left;
+    width: 40px;
+    height: 42px;
+    margin-top: 10px;
+    margin-left: -1px;
+    display: block;
+    border: 1px solid #797979;
+    background: url("../.images/user-icon.png") #ebebeb no-repeat 8px;
+    border-radius: 0 5px 5px 0;
+}
+
+.passwd {
+    float: left;
+    width: 40px;
+    height: 42px;
+    margin-top: 20px;
+    margin-left: -1px;
+    display: block;
+    border: 1px solid #797979;
+    background: url("../.images/password-icon.png") #ebebeb no-repeat 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+input[type="text"]:focus {
+    border-left: 1px solid #007eff;
+    border-top: 1px solid #007eff;
+    border-bottom: 1px solid #007eff;
+    box-shadow: 0 0 30px rgba(235, 235, 235, 0.8);
+    color: #007eff;
+}
+
+input[type="text"]:focus::placeholder {
+    color: #007eff;
+}
+
+input[type="text"]:focus::-moz-placeholder {
+    color: #007eff;
+}
+
+input[type="text"]:focus::-webkit-input-placeholder {
+    color: #007eff;
+}
+
+input[type="text"]:focus::-ms-input-placeholder {
+    color: #007eff;
+}
+
+input[type="text"]:focus:-ms-input-placeholder {
+    color: #007eff;
+}
+
+input[type="text"]:focus + div.log {
+    border-right: 1px solid #007eff;
+    border-top: 1px solid #007eff;
+    border-bottom: 1px solid #007eff;
+    background: url("../.images/user-icon-active.png") #ebebeb no-repeat 8px;
+    box-shadow: 0 0 30px rgba(235, 235, 235, 0.8);
+}
+
+input[type="password"]:focus {
+    border-left: 1px solid #007eff;
+    border-top: 1px solid #007eff;
+    border-bottom: 1px solid #007eff;
+    box-shadow: 0 0 30px rgba(235, 235, 235, 0.8);
+    color: #007eff;
+}
+
+input[type="password"]:focus::placeholder {
+    color: #007eff;
+}
+
+input[type="password"]:focus::-moz-placeholder {
+    color: #007eff;
+}
+
+input[type="password"]:focus::-webkit-input-placeholder {
+    color: #007eff;
+}
+
+input[type="password"]:focus::-ms-input-placeholder {
+    color: #007eff;
+}
+
+input[type="password"]:focus:-ms-input-placeholder {
+    color: #007eff;
+}
+
+input[type="password"]:focus + div.passwd {
+    border-right: 1px solid #007eff;
+    border-top: 1px solid #007eff;
+    border-bottom: 1px solid #007eff;
+    background: url("../.images/password-icon-active.png") #ebebeb no-repeat 10px;
+    box-shadow: 0 0 30px rgba(235, 235, 235, 0.8);
+}
+
+/*---------------------------------------------------------------*/
+
+/*Флажок "Запамятати мене---------------------------------------"*/
+.check {
+    width: 120px;
+    height: 20px;
+    float: left;
+    color: #ebebeb;
+    font-size: 13px;
+    line-height: 20px;
+    display: inline-block;
+    padding-top: 20px;
+}
+
+/*---------------------------------------------------------------*/
+
+/*Ссилка на відновлення паролю*/
+.forgot {
+    text-decoration: none;
+    color: #ebebeb;
+    float: right;
+    display: inline-block;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*Кнопка Login----------------------------------------------------*/
+.btnlog {
+    display: block;
+    float: left;
+    width: 325px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: #254e77;
+    border: 2px solid #4f7091;
+}
+
+.btnlog a {
+    text-decoration: none;
+    color: #ebebeb;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+}
+
+/*----------------------------------------------------------------*/
+
+/*Посилання на реєстрацію-----------------------------------------*/
+span {
+    display: block;
+    float: left;
+    margin: 20px 20px 0px 90px;
+    font-size: 12px;
+    color: #797979;
+}
+
+.link {
+    color: #007eff;
+}
+
+/*-----------------------------------------------------------------*/
