@@ -1,0 +1,98 @@
+/*Обнулення стилів---------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------------------------------------------------------------------*/
+
+.container {
+    font-family: "Arial", sans-serif;
+    background-color: #007e8a;
+    height: 85px;
+}
+
+.main_menu {
+    margin-left: 30px;
+}
+
+.main_menu i {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-size: 36px;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+
+.main_menu li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main_menu a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.main_menu li:hover > a {
+    background-color: #00daeb;
+}
+
+.main_menu li:hover > i {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    color: #facb1b;
+    -webkit-text-shadow: 0 0 10px rgba(234, 143, 43, 0.9);
+    -o-text-shadow: 0 0 10px rgba(234, 143, 43, 0.9);
+    -ms-text-shadow: 0 0 10px rgba(234, 143, 43, 0.9);
+    text-shadow: 0 0 10px rgba(234, 143, 43, 0.9);
+}
