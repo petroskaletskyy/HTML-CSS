@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'League_Gothic';
+    src: url('../.fonts/League_gothic/leaguegothic-regular-webfont.eot');
+    src: url('../.fonts/League_gothic/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../.fonts/League_gothic/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('../.fonts/League_gothic/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../.fonts/League_gothic/leaguegothic-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+
+@font-face {
+    font-family: 'Open_Sans_Light';
+    src: url('../.fonts/Open_Sans_Light/opensans-light-webfont.eot');
+    src: url('../.fonts/Open_Sans_Light/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../.fonts/Open_Sans_Light/opensans-light-webfont.woff2') format('woff2'),
+         url('../.fonts/Open_Sans_Light/opensans-light-webfont.woff') format('woff'),
+         url('../.fonts/Open_Sans_Light/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open_Sans_ExtraBold';
+    src: url('../.fonts/Open_Sans_ExtraBold/opensans-extrabold-webfont.eot');
+    src: url('../.fonts/Open_Sans_ExtraBold/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../.fonts/Open_Sans_ExtraBold/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../.fonts/Open_Sans_ExtraBold/opensans-extrabold-webfont.woff') format('woff'),
+         url('../.fonts/Open_Sans_ExtraBold/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../.fonts/Georgia/georgia-personaluse-webfont.eot');
+    src: url('../.fonts/Georgia/georgia-personaluse-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../.fonts/Georgia/georgia-personaluse-webfont.woff2') format('woff2'),
+         url('../.fonts/Georgia/georgia-personaluse-webfont.woff') format('woff'),
+         url('../.fonts/Georgia/georgia-personaluse-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} 
