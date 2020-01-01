@@ -1,0 +1,39 @@
+body {
+    background: url("../images/bg.jpg") no-repeat;
+    font-family: "Arial", sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 36px;
+    color: white;
+}
+
+.table {
+    background-color: #eed0f2;
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    top: 80px;
+    right: 5px;
+    border: 4px double black;
+    padding: 20px 10px;
+    font-family: serif;
+}
+
+h2 {
+    text-align: center;
+    color: blue;
+}
+
+.red {
+    color: red;
+    text-align: justify;
+}
+
+.italic {
+    font-style: italic;
+    font-family: sans-serif;
+}
