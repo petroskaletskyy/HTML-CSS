@@ -1,0 +1,55 @@
+.firstTable {
+    width: 600px;
+    height: 300px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.cellHeight {
+    height: 200px;
+}
+
+.firstTable td {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;  
+}
+
+.secondTable {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 600px;
+    height: 90px;
+}
+
+.secondTable td {
+    border: 1px solid black;
+    width: 150px;
+    height: 30px;
+}
+
+.colorCol {
+    background-color: yellow;
+}
+
+.thirdTable {
+    width: 600px;
+    height: 200px;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.thirdTable th {
+    border: 1px solid black;
+    background-color: yellow;
+}
+
+.thirdTable td {
+    text-align: center;
+    border: 1px solid black;
+}
+
+caption {
+    font-size: 22px;
+    font-style: italic;
+}

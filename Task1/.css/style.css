@@ -1,0 +1,22 @@
+.colorRed {
+    color: red;
+}
+
+.colorGreen {
+    color: green;
+}
+
+.colorBlue {
+    color: blue;
+}
+
+.textStyle {
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.colorRed,
+.colorGreen,
+.colorBlue {
+    font-size: 22px;
+}
