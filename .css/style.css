@@ -1,0 +1,370 @@
+/*Reset CSS-------------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Загальні стилі---------------------------------------------------------------*/
+
+body, 
+* {
+    font-family: "Tahoma", sans-serif;
+    color: #e6e6e6;
+    box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------*/
+
+/*Контейнер сторінки----------------------------------------------------------*/
+
+.container {
+    width: 960px;
+    background: url("../.images/background.jpg");
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Хедер сторінки---------------------------------------------------------------*/
+
+header {
+    margin: 50px 70px 20px 60px;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.left_side {
+    width: 263px;
+    background-image: url("../.images/palm%20tree.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: flex-start;
+}
+
+.left_side img {
+    padding-top: 80px;
+}
+
+.left_side p {
+    font-size: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.right_side {
+    justify-content: flex-end;
+}
+
+.right_side p {
+    text-transform: capitalize;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.right_side ul li {
+    font-size: 9px;
+    padding: 10px 0 0 0;
+}
+
+.right_side a {
+    text-decoration: none;
+    color: #e6e6e6;
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Мейн сторінки----------------------------------------------------------------*/
+
+main {
+    padding-left: 60px;
+}
+
+.photo {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.photo_border {
+    border: 3px solid #8b8987;
+    border-radius: 3px;
+    position: relative;
+}
+
+.photo_border::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.8);
+    -webkit-box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: inset 0px 0px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/*Футер сторінки---------------------------------------------------------------*/
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 10px;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*Медіа-запити-----------------------------------------------------------------*/
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        margin: 40px 50px 20px 80px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    main {
+        padding-left: 40px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        max-width: 600px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    
+     header {
+        margin: 40px 20px 20px 20px;
+        display: inline-flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    main {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+    .container {
+        max-width: 480px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .right_side {
+        padding-top: 20px;
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+    
+    .right_side p {
+        display: inline-flex;
+        padding-top: 5px;
+    }
+    
+    .right_side ul li{
+        display: inline-flex;
+        justify-content: flex-start;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    main {
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer p {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (min-width: 301px) and (max-width: 480px) {
+    .container {
+        max-width: 300px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header {
+        margin: 5px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+            
+    .right_side {
+        padding-top: 20px;
+        display: inline-flex;
+        justify-content: flex-start;
+    }
+    
+    .right_side p {
+        display: inline-flex;
+        padding-top: 5px;
+    }
+    
+    .right_side ul li{
+        display: inline-flex;
+        justify-content: flex-start;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    main {
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer p {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .container {
+        max-width: 290px;
+        background-repeat: repeat;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    
+    header {
+        margin: 5px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .right_side {
+        padding-top: 20px;
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    
+    .right_side p {
+        display: inline-flex;
+        font-size: 10px;
+    }
+    
+    .right_side ul {
+        font-size: 10px;
+    }
+    
+    .right_side ul li{
+        display: inline-flex;
+        justify-content: flex-start;
+        padding-top: 0;
+        padding-left: 20px;
+    }
+    
+    main {
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    footer p {
+        padding-top: 10px;
+    }
+}
+
+/*-----------------------------------------------------------------------------*/
